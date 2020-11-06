@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# logs
+/docs/heroku-logs
+
 # testing
 /coverage
 
