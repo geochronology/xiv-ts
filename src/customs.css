@@ -1,0 +1,10 @@
+.ui.input > input {
+  font-size: 1.2rem;
+  background-color: purple !important;
+}
+
+.ui.input > input:focus {
+  color: rgba(238, 238, 238, .9) !important;
+  opacity: .85;
+  transition: all .1s ease-in;
+}
