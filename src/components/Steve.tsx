@@ -10,7 +10,8 @@ import styled from 'styled-components'
 
 const StyledInput = styled(Input)`
   height: 48px;
-  width: 400px;
+  width: 95%;
+  max-width: 400px;
 `
 
 export const Steve = () => {
