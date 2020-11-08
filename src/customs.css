@@ -9,13 +9,14 @@
   transition: all .1s ease-in;
 }
 
-body {
+#root {
   margin: 0 auto !important;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
 
-body::before {
+#root::before {
   content: "";
   position: absolute;
   /* mask-image:linear-gradient( to bottom,
@@ -43,13 +44,13 @@ body::before {
   z-index: -2;
 }
 
-body::after {
+#root::after {
   content: "";
   /* background-image: url('./assets/catboi-finale.png') !important; */
   mask-image: url('./assets/catboi-finale.png') !important;
   mask-size: cover;
   mask-mode: alpha;
-  mask-position: 0 15px;
+  /* mask-position: 0 15px; */
   /* mask-clip: url('./assets/catboi-finale.png'); */
   /* background-clip: url('./assets/catboi-finale.png'), url('./assets/catboi-finale.png') !important; */
   /* background-color: rgba(0,0,0,0) !important; */
