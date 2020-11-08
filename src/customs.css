@@ -8,3 +8,74 @@
   opacity: .85;
   transition: all .1s ease-in;
 }
+
+body {
+  margin: 0 auto !important;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  /* mask-image:linear-gradient( to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.2),
+  );
+  mask-size:cover;
+  mask-mode: alpha; */
+  /* background-image: linear-gradient( to bottom,
+  rgba(0, 0, 0, 0.7),
+  rgba(0, 0, 0, 0.2),
+  ), url('./assets/anime-kitchen.jpg') !important; */
+  background-image: linear-gradient( to bottom,
+  rgba(0, 0, 0, 0.7),
+  rgba(0, 0, 0, 0.2)), url('./assets/anime-kitchen.jpg') !important;
+  
+  /* background-blend-mode: overlay, normal !important; */
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  /* background-image: url('./assets/catboi-finale.png') !important; */
+  mask-image: url('./assets/catboi-finale.png') !important;
+  mask-size: cover;
+  mask-mode: alpha;
+  mask-position: 0 15px;
+  /* mask-clip: url('./assets/catboi-finale.png'); */
+  /* background-clip: url('./assets/catboi-finale.png'), url('./assets/catboi-finale.png') !important; */
+  /* background-color: rgba(0,0,0,0) !important; */
+  /* background-image: url('./assets/catboi-finale.png'), linear-gradient(-225deg,
+    rgba(255,255,176,.33),
+    rgba(255, 204, 128, .17)
+  ),  !important; */
+  background-image: linear-gradient(to bottom right,
+    rgba(255,255,176,.8),
+    rgba(255,255,176,.66) 15%,
+    rgba(255,255,176,.33) 25%,
+    rgba(255, 204, 128, .12) 55%,
+    rgba(255, 204, 128, .04)
+  ), url('./assets/catboi-finale.png') !important;
+  /* mask-type: screen !important; */
+  /* mix-blend-mode: color !important; */
+  background-blend-mode: overlay, normal !important;
+  /* background-blend-mode: color, normal !important; */
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
