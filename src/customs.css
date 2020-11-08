@@ -48,8 +48,11 @@
   content: "";
   /* background-image: url('./assets/catboi-finale.png') !important; */
   mask-image: url('./assets/catboi-finale.png') !important;
+  -webkit-mask-image: url('./assets/catboi-finale.png') !important;
   mask-size: cover;
+  -webkit-mask-size: cover;
   mask-mode: alpha;
+  -webkit-mask-mode: alpha;
   /* mask-position: 0 15px; */
   /* mask-clip: url('./assets/catboi-finale.png'); */
   /* background-clip: url('./assets/catboi-finale.png'), url('./assets/catboi-finale.png') !important; */
